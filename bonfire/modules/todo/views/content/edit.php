@@ -24,7 +24,7 @@ $id = isset($todo['id']) ?  $todo['id'] : '';
 </div>
 <div>
 <?php echo form_label('date', 'todo_date'); ?> <span class="required">*</span>
-    <script>head.ready(function(){$('#todo_date').datetimepicker({ dateFormat: 'mm/dd/yy', timeFormat: 'hh:mm:ss',minDate:0});});</script>
+    <script>$(function(){$('#todo_date').datetimepicker({ dateFormat: 'mm/dd/yy', timeFormat: 'hh:mm:ss', minDate:0});});</script>
     <input id="todo_date" type="text" name="todo_date"  value="<?php echo set_value('todo_date', isset($todo['todo_date']) ? $todo['todo_date'] : ''); ?>"  />
 </div>
 

@@ -1,11 +1,10 @@
 <?php
 	// Setup our default assets to load.
 	Assets::add_js( array(
-		Template::theme_url('js/jquery-1.7.1.min.js'),
+		Template::theme_url('js/jquery-1.8.0.min.js'),
 		Template::theme_url('js/jquery.form.js'),
 		Template::theme_url('js/jquery-ui-1.8.13.min.js'),
                 Template::theme_url('js/jquery.bbq.js'),
-		Template::theme_url('js/ui.js'),
 		Template::theme_url('js/jwerty.js'),
 	),
 	'external',
@@ -29,12 +28,8 @@
 	<!-- Fix the mobile Safari auto-zoom bug -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<script type="text/javascript" src="<?php echo base_url() .'assets/js/head.min.js' ?>"></script>
+        <?php print Assets::external_js(null, false) ?>
 	<script>
-	head.feature("placeholder", function() {
-		var inputElem = document.createElement('input');
-		return new Boolean('placeholder' in inputElem);
-	});
         
         function site_url(uri){
             var site_url = '<?php print site_url() ?>';
@@ -105,13 +100,6 @@
 		</p>
 	</div>
 
-	<!--<div id="debug"></div>-->
-
-	<script>
-		head.js(<?php echo Assets::external_js(null, true) ?>);
-		head.js(<?php echo Assets::module_js(true) ?>);
-	</script>
-	<?php echo Assets::inline_js(); ?>
 
 </body>
 </html>

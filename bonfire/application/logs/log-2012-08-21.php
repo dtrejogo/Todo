@@ -14,3 +14,4 @@ ERROR - 2012-08-21 02:31:31 --> Severity: Warning  --> Cannot modify header info
 ERROR - 2012-08-21 02:31:31 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/todo/bonfire/codeigniter/core/Exceptions.php:170) /Applications/MAMP/htdocs/todo/bonfire/codeigniter/core/Output.php 337
 ERROR - 2012-08-21 02:31:31 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/todo/bonfire/codeigniter/core/Exceptions.php:170) /Applications/MAMP/htdocs/todo/bonfire/codeigniter/core/Output.php 337
 ERROR - 2012-08-21 02:53:44 --> Severity: Notice  --> Undefined property: CI::$find_all /Applications/MAMP/htdocs/todo/bonfire/codeigniter/core/Model.php 50
+ERROR - 2012-08-21 15:20:13 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.

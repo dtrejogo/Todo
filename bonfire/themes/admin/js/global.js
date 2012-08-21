@@ -85,7 +85,7 @@
 //--------------------------------------------------------------------
 
 
-head.ready(function(){
+ $(function() {
 
     /*
 		Notification fades
@@ -103,6 +103,8 @@ head.ready(function(){
     $.ajaxSetup({
         cache: false
     });
+    
+  
 	
     /*$('#loader').ajaxStart(function(){
         $('#loader').show();
@@ -193,5 +195,5 @@ function done_record(id){
                    
     });
     
-}
+}   
 
